@@ -1,0 +1,9 @@
+IMPORT_FILES_AND_FOLDERS_MODE=prompt
+IMPORT_FILES_AND_FOLDERS_VIRTUAL_FOLDER_MODE=prompt
+PROBLEMS_FILTERS_MIGRATE=true
+TASKS_FILTERS_MIGRATE=true
+WORKSPACE_NAME=Basic Data Structures
+eclipse.preferences.version=1
+platformState=1556237249752
+quickStart=false
+tipsAndTricks=true

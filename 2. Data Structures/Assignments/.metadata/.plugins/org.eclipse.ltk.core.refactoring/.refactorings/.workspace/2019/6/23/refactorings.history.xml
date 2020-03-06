@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;Linked Lists&apos; to &apos;2.1.0 Linked Lists&apos;" description="Rename resource &apos;Linked Lists&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/Linked Lists" name="2.1.0 Linked Lists" stamp="1559441610377" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;Doubly Linked Lists&apos; to &apos;2.1.1 Doubly Linked Lists&apos;" description="Rename resource &apos;Doubly Linked Lists&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/Doubly Linked Lists" name="2.1.1 Doubly Linked Lists" stamp="1559441639948" updateReferences="true"/>
+</session>

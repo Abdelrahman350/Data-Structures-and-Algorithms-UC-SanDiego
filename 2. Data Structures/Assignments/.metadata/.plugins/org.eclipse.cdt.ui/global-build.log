@@ -1,0 +1,122 @@
+02:29:48 **** Clean-only build of configuration Debug for project 2.1.7 Compute Tree Height ****
+rm -rf computeTreeHeight.d computeTreeHeight.o "2.1.7 Compute Tree Height.exe" 
+Command canceled
+Info: Nothing to build for 2.1.0 Linked Lists
+02:31:37 **** Rebuild of configuration Debug for project 2.1.7 Compute Tree Height ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o computeTreeHeight.o "..\\computeTreeHeight.c" 
+gcc -o "2.1.7 Compute Tree Height.exe" computeTreeHeight.o 
+03:01:45 **** Rebuild of configuration Debug for project 2.1.7 Compute Tree Height ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o computeTreeHeight.o "..\\computeTreeHeight.cpp" 
+..\computeTreeHeight.cpp: In function 'int main()':
+..\computeTreeHeight.cpp:20:15: warning: unused variable 'height' [-Wunused-variable]
+  unsigned int height = 0;
+               ^~~~~~
+g++ -o "2.1.7 Compute Tree Height.exe" computeTreeHeight.o 
+03:16:40 **** Incremental Build of configuration Debug for project 2.1.7 Compute Tree Height ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o computeTreeHeight.o "..\\computeTreeHeight.cpp" 
+g++ -o "2.1.7 Compute Tree Height.exe" computeTreeHeight.o 
+04:00:38 **** Incremental Build of configuration Debug for project 2.1.7 Compute Tree Height ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o computeTreeHeight.o "..\\computeTreeHeight.cpp" 
+..\computeTreeHeight.cpp: In function 'int main()':
+..\computeTreeHeight.cpp:32:27: error: no matching function for call to 'treeHeight(std::vector<node>&)'
+  height = treeHeight(nodes);
+                           ^
+..\computeTreeHeight.cpp:19:14: note: candidate: template<class Tree> unsigned int treeHeight(std::vector<node>)
+ unsigned int treeHeight(vector<node> nodes);
+              ^~~~~~~~~~
+..\computeTreeHeight.cpp:19:14: note:   template argument deduction/substitution failed:
+..\computeTreeHeight.cpp:32:27: note:   couldn't deduce template parameter 'Tree'
+  height = treeHeight(nodes);
+                           ^
+04:01:34 **** Incremental Build of configuration Debug for project 2.1.7 Compute Tree Height ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o computeTreeHeight.o "..\\computeTreeHeight.cpp" 
+..\computeTreeHeight.cpp:20:10: error: cannot declare '::main' to be a template
+ int main(){
+          ^
+04:01:49 **** Incremental Build of configuration Debug for project 2.1.7 Compute Tree Height ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o computeTreeHeight.o "..\\computeTreeHeight.cpp" 
+..\computeTreeHeight.cpp:19:22: error: expected unqualified-id before ';' token
+ template <class Tree>;
+                      ^
+10:40:37 **** Incremental Build of configuration Debug for project 2.1.7 Compute Tree Height ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o computeTreeHeight.o "..\\computeTreeHeight.cpp" 
+..\computeTreeHeight.cpp:19:22: error: expected unqualified-id before ';' token
+ template <class Tree>;
+                      ^
+10:41:02 **** Incremental Build of configuration Debug for project 2.1.7 Compute Tree Height ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o computeTreeHeight.o "..\\computeTreeHeight.cpp" 
+g++ -o "2.1.7 Compute Tree Height.exe" computeTreeHeight.o 
+11:10:36 **** Incremental Build of configuration Debug for project 2.1.7 Compute Tree Height ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o computeTreeHeight.o "..\\computeTreeHeight.cpp" 
+..\computeTreeHeight.cpp: In function 'void insert_tree(tree*, int)':
+..\computeTreeHeight.cpp:49:13: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if(value < root->value){
+       ~~~~~~^~~~~~~~~~~~~
+..\computeTreeHeight.cpp:58:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    else if(value > root->value){
+            ~~~~~~^~~~~~~~~~~~~
+..\computeTreeHeight.cpp: In function 'void print_tree(tree_node*)':
+..\computeTreeHeight.cpp:80:29: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long unsigned int' [-Wformat=]
+   printf("%d\t", root->value);
+                  ~~~~~~~~~~~^
+g++ -o "2.1.7 Compute Tree Height.exe" computeTreeHeight.o 
+Info: Nothing to build for 2.1.7 Compute Tree Height
+11:17:49 **** Incremental Build of configuration Debug for project 2.1.7 Compute Tree Height ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o computeTreeHeight.o "..\\computeTreeHeight.cpp" 
+g++ -o "2.1.7 Compute Tree Height.exe" computeTreeHeight.o 
+11:47:54 **** Incremental Build of configuration Debug for project 2.1.7 Compute Tree Height ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o computeTreeHeight.o "..\\computeTreeHeight.cpp" 
+g++ -o "2.1.7 Compute Tree Height.exe" computeTreeHeight.o 
+Info: Nothing to build for 2.1.7 Compute Tree Height
+Info: Nothing to build for 2.1.7 Compute Tree Height
+11:53:35 **** Incremental Build of configuration Debug for project 2.1.7 Compute Tree Height ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o computeTreeHeight.o "..\\computeTreeHeight.cpp" 
+g++ -o "2.1.7 Compute Tree Height.exe" computeTreeHeight.o 
+Info: Nothing to build for 2.1.7 Compute Tree Height
+11:55:53 **** Incremental Build of configuration Debug for project 2.1.7 Compute Tree Height ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o computeTreeHeight.o "..\\computeTreeHeight.cpp" 
+g++ -o "2.1.7 Compute Tree Height.exe" computeTreeHeight.o 
+Info: Nothing to build for 2.1.7 Compute Tree Height
+Info: Nothing to build for 2.1.4 Binary Tree
+Info: Nothing to build for 2.1.7 Compute Tree Height
+Info: Nothing to build for 2.1.4 Binary Tree
+12:52:22 **** Incremental Build of configuration Debug for project 2.1.7 Compute Tree Height ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o computeTreeHeight.o "..\\computeTreeHeight.cpp" 
+g++ -o "2.1.7 Compute Tree Height.exe" computeTreeHeight.o 
+Info: Nothing to build for 2.1.7 Compute Tree Height
+Info: Nothing to build for 2.1.4 Binary Tree
+02:31:24 **** Incremental Build of configuration Debug for project 2.1.7 Compute Tree Height ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o computeTreeHeight.o "..\\computeTreeHeight.cpp" 
+g++ -o "2.1.7 Compute Tree Height.exe" computeTreeHeight.o 
+Info: Nothing to build for 2.1.7 Compute Tree Height
+11:59:02 **** Incremental Build of configuration Debug for project 2.1.7 Compute Tree Height ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o computeTreeHeight.o "..\\computeTreeHeight.cpp" 
+g++ -o "2.1.7 Compute Tree Height.exe" computeTreeHeight.o 
+Info: Nothing to build for 2.1.7 Compute Tree Height
+Info: Nothing to build for 2.1.4 Binary Tree
+12:30:50 **** Incremental Build of configuration Debug for project 2.1.7 Compute Tree Height ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o computeTreeHeight.o "..\\computeTreeHeight.cpp" 
+g++ -o "2.1.7 Compute Tree Height.exe" computeTreeHeight.o 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file 2.1.7 Compute Tree Height.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+12:32:18 **** Incremental Build of configuration Debug for project 2.1.7 Compute Tree Height ****
+Info: Internal Builder is used for build
+g++ -o "2.1.7 Compute Tree Height.exe" computeTreeHeight.o 
+Info: Nothing to build for 2.1.7 Compute Tree Height

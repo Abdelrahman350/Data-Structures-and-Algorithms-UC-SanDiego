@@ -1,0 +1,32 @@
+/*
+ * computeTreeHeight.cpp
+ *
+ *  Created on: Aug 6, 2019
+ *      Author: Abdelrahman
+ */
+
+
+#include <iostream>
+
+typedef struct node{
+	long int parents;
+	unsigned long int nodes;
+}node;
+
+int main(){
+	unsigned long int n;
+	unsigned int height = 0;
+
+	cin >> n;
+
+	node *ptrNodes = (node*) malloc(n * sizeof(node));
+	for(unsigned long int i = 0; i < n; i++){
+		scanf("%ld", (*ptrNodes).parents);
+		fflush(stdout);
+		(*ptrNodes).nodes = i;
+	}
+
+
+
+	return 0;
+}

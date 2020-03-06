@@ -1,0 +1,20 @@
+/*
+ * computeTreeHeight.c
+ *
+ *  Created on: Aug 6, 2019
+ *      Author: Abdelrahman
+ */
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+	unsigned long int n;
+
+	scanf("%lu", &n);
+	fflush(stdin);
+
+
+	return 0;
+}

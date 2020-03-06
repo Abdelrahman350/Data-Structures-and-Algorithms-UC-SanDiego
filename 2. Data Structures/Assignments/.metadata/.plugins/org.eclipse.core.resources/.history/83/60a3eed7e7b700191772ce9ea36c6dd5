@@ -1,0 +1,39 @@
+/*
+ * computeTreeHeight.cpp
+ *
+ *  Created on: Aug 6, 2019
+ *      Author: Abdelrahman
+ */
+
+
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+typedef struct node{
+	long int parents;
+	unsigned long int nodes;
+}node;
+
+int main(){
+	unsigned long int n;
+	unsigned int height = 0;
+
+	cin >> n;
+
+	vector <node> nodes(n);
+
+	for(unsigned long int i = 0; i < n; i++){
+		cin >> nodes[i].parents;
+		nodes[i].nodes = i;
+	}
+	height = treeHeight(nodes);
+	cout << height;
+	return 0;
+}
+
+unsigned int treeHeight(vector<node> nodes){
+	unsigned int height = 0;
+	return height;
+}
