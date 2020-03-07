@@ -120,3 +120,17 @@ collect2.exe: error: ld returned 1 exit status
 Info: Internal Builder is used for build
 g++ -o "2.1.7 Compute Tree Height.exe" computeTreeHeight.o 
 Info: Nothing to build for 2.1.7 Compute Tree Height
+01:54:43 **** Rebuild of configuration Debug for project 2.1.1 Doubly Linked Lists ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o DoubleLinkedLists.o "..\\DoubleLinkedLists.c" 
+gcc -o "2.1.1 Doubly Linked Lists.exe" DoubleLinkedLists.o 
+Info: Nothing to build for 2.1.1 Doubly Linked Lists
+02:21:19 **** Rebuild of configuration Debug for project 2.1.0 Linked Lists ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LinkedLists.o "..\\LinkedLists.c" 
+gcc -o "2.1.0 Linked Lists.exe" LinkedLists.o 
+Info: Nothing to build for 2.1.0 Linked Lists
+02:22:00 **** Rebuild of configuration Debug for project 2.1.7 Compute Tree Height ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o computeTreeHeight.o "..\\computeTreeHeight.cpp" 
+g++ -o "2.1.7 Compute Tree Height.exe" computeTreeHeight.o 
