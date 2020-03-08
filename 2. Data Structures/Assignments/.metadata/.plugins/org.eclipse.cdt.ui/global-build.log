@@ -134,3 +134,31 @@ Info: Nothing to build for 2.1.0 Linked Lists
 Info: Internal Builder is used for build
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -o computeTreeHeight.o "..\\computeTreeHeight.cpp" 
 g++ -o "2.1.7 Compute Tree Height.exe" computeTreeHeight.o 
+01:59:06 **** Incremental Build of configuration Debug for project 2.1.7 Compute Tree Height ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o computeTreeHeight.o "..\\computeTreeHeight.cpp" 
+..\computeTreeHeight.cpp: In member function 'int Tree::height(int)':
+..\computeTreeHeight.cpp:37:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i = 0; i < nodes[root].size(); ++i){
+                  ~~^~~~~~~~~~~~~~~~~~~~
+g++ -o "2.1.7 Compute Tree Height.exe" computeTreeHeight.o 
+01:59:43 **** Incremental Build of configuration Debug for project 2.1.7 Compute Tree Height ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o computeTreeHeight.o "..\\computeTreeHeight.cpp" 
+g++ -o "2.1.7 Compute Tree Height.exe" computeTreeHeight.o 
+Info: Nothing to build for 2.1.7 Compute Tree Height
+Info: Nothing to build for 2.1.7 Compute Tree Height
+Info: Nothing to build for 2.1.7 Compute Tree Height
+02:03:10 **** Incremental Build of configuration Debug for project 2.1.7 Compute Tree Height ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o computeTreeHeight.o "..\\computeTreeHeight.cpp" 
+g++ -o "2.1.7 Compute Tree Height.exe" computeTreeHeight.o 
+02:05:27 **** Incremental Build of configuration Debug for project 2.1.7 Compute Tree Height ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o computeTreeHeight.o "..\\computeTreeHeight.cpp" 
+g++ -o "2.1.7 Compute Tree Height.exe" computeTreeHeight.o 
+02:06:20 **** Incremental Build of configuration Debug for project 2.1.7 Compute Tree Height ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o computeTreeHeight.o "..\\computeTreeHeight.cpp" 
+g++ -o "2.1.7 Compute Tree Height.exe" computeTreeHeight.o 
+Info: Nothing to build for 2.1.7 Compute Tree Height
