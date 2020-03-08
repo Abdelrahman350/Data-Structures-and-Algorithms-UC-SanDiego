@@ -5,12 +5,6 @@
  *      Author: Abdelrahman
  */
 
-/*
- * Fibonacci.c
- *
- *  Created on: Feb 28, 2019
- *      Author: Abdelrahman
- */
 
 #include <stdio.h>
 #include <inttypes.h>

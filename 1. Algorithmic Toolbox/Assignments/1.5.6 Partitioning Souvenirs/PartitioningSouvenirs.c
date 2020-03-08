@@ -10,6 +10,7 @@
 #include <stdlib.h>
 
 typedef unsigned int uint;
+uint equalPartitions(uint *ptr, uint n);
 
 int main(){
 	uint n;
