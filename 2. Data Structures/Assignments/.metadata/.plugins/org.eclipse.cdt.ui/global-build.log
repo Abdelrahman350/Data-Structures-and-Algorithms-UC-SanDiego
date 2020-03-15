@@ -162,3 +162,576 @@ Info: Internal Builder is used for build
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -o computeTreeHeight.o "..\\computeTreeHeight.cpp" 
 g++ -o "2.1.7 Compute Tree Height.exe" computeTreeHeight.o 
 Info: Nothing to build for 2.1.7 Compute Tree Height
+15:21:44 **** Rebuild of configuration Debug for project 2.1.8 Network packet processing simulation ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o networkSimulation.o "..\\networkSimulation.cpp" 
+..\networkSimulation.cpp: In function 'int main()':
+..\networkSimulation.cpp:14:20: warning: unused variable 's' [-Wunused-variable]
+  long unsigned int s = 0; // The size of the buffer
+                    ^
+..\networkSimulation.cpp:15:20: warning: unused variable 'n' [-Wunused-variable]
+  long unsigned int n = 0; // The number of the incoming network packets
+                    ^
+g++ -o "2.1.8 Network packet processing simulation.exe" networkSimulation.o 
+15:31:52 **** Incremental Build of configuration Debug for project 2.1.8 Network packet processing simulation ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o networkSimulation.o "..\\networkSimulation.cpp" 
+..\networkSimulation.cpp: In function 'int main()':
+..\networkSimulation.cpp:16:20: warning: unused variable 's' [-Wunused-variable]
+  long unsigned int s = 0; // The size of the buffer
+                    ^
+g++ -o "2.1.8 Network packet processing simulation.exe" networkSimulation.o 
+15:32:19 **** Incremental Build of configuration Debug for project 2.1.8 Network packet processing simulation ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o networkSimulation.o "..\\networkSimulation.cpp" 
+..\networkSimulation.cpp: In function 'int main()':
+..\networkSimulation.cpp:16:20: warning: unused variable 's' [-Wunused-variable]
+  long unsigned int s = 0; // The size of the buffer
+                    ^
+g++ -o "2.1.8 Network packet processing simulation.exe" networkSimulation.o 
+15:32:31 **** Incremental Build of configuration Debug for project 2.1.8 Network packet processing simulation ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o networkSimulation.o "..\\networkSimulation.cpp" 
+..\networkSimulation.cpp: In function 'int main()':
+..\networkSimulation.cpp:16:20: warning: unused variable 's' [-Wunused-variable]
+  long unsigned int s = 0; // The size of the buffer
+                    ^
+g++ -o "2.1.8 Network packet processing simulation.exe" networkSimulation.o 
+15:36:19 **** Incremental Build of configuration Debug for project 2.1.8 Network packet processing simulation ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o networkSimulation.o "..\\networkSimulation.cpp" 
+..\networkSimulation.cpp: In function 'int main()':
+..\networkSimulation.cpp:25:25: error: variable or field 'networkSimulation' declared void
+  void networkSimulation(s, &A, &P, &result);
+                         ^
+15:36:31 **** Incremental Build of configuration Debug for project 2.1.8 Network packet processing simulation ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o networkSimulation.o "..\\networkSimulation.cpp" 
+..\networkSimulation.cpp: In function 'int main()':
+..\networkSimulation.cpp:25:23: error: invalid initialization of non-const reference of type 'std::vector<unsigned int>&' from an rvalue of type 'std::vector<unsigned int>*'
+  networkSimulation(s, &A, &P, &result);
+                       ^~
+..\networkSimulation.cpp:13:6: note: in passing argument 2 of 'void networkSimulation(int, std::vector<unsigned int>&, std::vector<unsigned int>&, std::vector<int>&)'
+ void networkSimulation(int s, std::vector <unsigned int>& A, std::vector <unsigned int>& P, std::vector <int>& result);
+      ^~~~~~~~~~~~~~~~~
+15:38:32 **** Incremental Build of configuration Debug for project 2.1.8 Network packet processing simulation ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o networkSimulation.o "..\\networkSimulation.cpp" 
+g++ -o "2.1.8 Network packet processing simulation.exe" networkSimulation.o 
+15:39:17 **** Incremental Build of configuration Debug for project 2.1.8 Network packet processing simulation ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o networkSimulation.o "..\\networkSimulation.cpp" 
+..\networkSimulation.cpp: In function 'int main()':
+..\networkSimulation.cpp:25:35: error: cannot bind non-const lvalue reference of type 'int&' to an rvalue of type 'int'
+  networkSimulation(s, A, P, result);
+                                   ^
+..\networkSimulation.cpp:13:6: note:   initializing argument 1 of 'void networkSimulation(int&, std::vector<unsigned int>&, std::vector<unsigned int>&, std::vector<int>&)'
+ void networkSimulation(int& s, std::vector <unsigned int>& A, std::vector <unsigned int>& P, std::vector <int>& result);
+      ^~~~~~~~~~~~~~~~~
+15:39:42 **** Incremental Build of configuration Debug for project 2.1.8 Network packet processing simulation ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o networkSimulation.o "..\\networkSimulation.cpp" 
+..\networkSimulation.cpp: In function 'int main()':
+..\networkSimulation.cpp:25:20: error: invalid conversion from 'long unsigned int*' to 'int' [-fpermissive]
+  networkSimulation(&s, A, P, result);
+                    ^~
+..\networkSimulation.cpp:13:6: note:   initializing argument 1 of 'void networkSimulation(int&, std::vector<unsigned int>&, std::vector<unsigned int>&, std::vector<int>&)'
+ void networkSimulation(int& s, std::vector <unsigned int>& A, std::vector <unsigned int>& P, std::vector <int>& result);
+      ^~~~~~~~~~~~~~~~~
+..\networkSimulation.cpp:25:20: error: cannot bind rvalue '(int)(& s)' to 'int&'
+  networkSimulation(&s, A, P, result);
+                    ^~
+15:41:08 **** Incremental Build of configuration Debug for project 2.1.8 Network packet processing simulation ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o networkSimulation.o "..\\networkSimulation.cpp" 
+..\networkSimulation.cpp: In function 'int main()':
+..\networkSimulation.cpp:25:35: error: cannot bind non-const lvalue reference of type 'int&' to an rvalue of type 'int'
+  networkSimulation(s, A, P, result);
+                                   ^
+..\networkSimulation.cpp:13:6: note:   initializing argument 1 of 'void networkSimulation(int&, std::vector<unsigned int>&, std::vector<unsigned int>&, std::vector<int>&)'
+ void networkSimulation(int& s, std::vector <unsigned int>& A, std::vector <unsigned int>& P, std::vector <int>& result);
+      ^~~~~~~~~~~~~~~~~
+15:44:47 **** Incremental Build of configuration Debug for project 2.1.8 Network packet processing simulation ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o networkSimulation.o "..\\networkSimulation.cpp" 
+g++ -o "2.1.8 Network packet processing simulation.exe" networkSimulation.o 
+15:45:49 **** Incremental Build of configuration Debug for project 2.1.8 Network packet processing simulation ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o networkSimulation.o "..\\networkSimulation.cpp" 
+g++ -o "2.1.8 Network packet processing simulation.exe" networkSimulation.o 
+15:50:59 **** Incremental Build of configuration Debug for project 2.1.8 Network packet processing simulation ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o networkSimulation.o "..\\networkSimulation.cpp" 
+..\networkSimulation.cpp: In function 'int main()':
+..\networkSimulation.cpp:28:13: error: no match for 'operator<<' (operand types are 'std::ostream {aka std::basic_ostream<char>}' and 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}')
+   std::cout << i << std::endl;
+   ~~~~~~~~~~^~~~
+In file included from c:\mingw\include\c++\7.1.0\iostream:39:0,
+                 from ..\networkSimulation.cpp:9:
+c:\mingw\include\c++\7.1.0\ostream:108:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+       ^~~~~~~~
+c:\mingw\include\c++\7.1.0\ostream:108:7: note:   no known conversion for argument 1 from 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}' to 'std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&) {aka std::basic_ostream<char>& (*)(std::basic_ostream<char>&)}'
+c:\mingw\include\c++\7.1.0\ostream:117:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]
+       operator<<(__ios_type& (*__pf)(__ios_type&))
+       ^~~~~~~~
+c:\mingw\include\c++\7.1.0\ostream:117:7: note:   no known conversion for argument 1 from 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}' to 'std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}'
+c:\mingw\include\c++\7.1.0\ostream:127:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(ios_base& (*__pf) (ios_base&))
+       ^~~~~~~~
+c:\mingw\include\c++\7.1.0\ostream:127:7: note:   no known conversion for argument 1 from 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}' to 'std::ios_base& (*)(std::ios_base&)'
+c:\mingw\include\c++\7.1.0\ostream:166:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long __n)
+       ^~~~~~~~
+c:\mingw\include\c++\7.1.0\ostream:166:7: note:   no known conversion for argument 1 from 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}' to 'long int'
+c:\mingw\include\c++\7.1.0\ostream:170:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long __n)
+       ^~~~~~~~
+c:\mingw\include\c++\7.1.0\ostream:170:7: note:   no known conversion for argument 1 from 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}' to 'long unsigned int'
+c:\mingw\include\c++\7.1.0\ostream:174:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(bool __n)
+       ^~~~~~~~
+c:\mingw\include\c++\7.1.0\ostream:174:7: note:   no known conversion for argument 1 from 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}' to 'bool'
+In file included from c:\mingw\include\c++\7.1.0\ostream:666:0,
+                 from c:\mingw\include\c++\7.1.0\iostream:39,
+                 from ..\networkSimulation.cpp:9:
+c:\mingw\include\c++\7.1.0\bits\ostream.tcc:91:5: note: candidate: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+c:\mingw\include\c++\7.1.0\bits\ostream.tcc:91:5: note:   no known conversion for argument 1 from 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}' to 'short int'
+In file included from c:\mingw\include\c++\7.1.0\iostream:39:0,
+                 from ..\networkSimulation.cpp:9:
+c:\mingw\include\c++\7.1.0\ostream:181:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned short __n)
+       ^~~~~~~~
+c:\mingw\include\c++\7.1.0\ostream:181:7: note:   no known conversion for argument 1 from 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}' to 'short unsigned int'
+In file included from c:\mingw\include\c++\7.1.0\ostream:666:0,
+                 from c:\mingw\include\c++\7.1.0\iostream:39,
+                 from ..\networkSimulation.cpp:9:
+c:\mingw\include\c++\7.1.0\bits\ostream.tcc:105:5: note: candidate: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+c:\mingw\include\c++\7.1.0\bits\ostream.tcc:105:5: note:   no known conversion for argument 1 from 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}' to 'int'
+In file included from c:\mingw\include\c++\7.1.0\iostream:39:0,
+                 from ..\networkSimulation.cpp:9:
+c:\mingw\include\c++\7.1.0\ostream:192:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned int __n)
+       ^~~~~~~~
+c:\mingw\include\c++\7.1.0\ostream:192:7: note:   no known conversion for argument 1 from 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}' to 'unsigned int'
+c:\mingw\include\c++\7.1.0\ostream:201:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long long __n)
+       ^~~~~~~~
+c:\mingw\include\c++\7.1.0\ostream:201:7: note:   no known conversion for argument 1 from 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}' to 'long long int'
+c:\mingw\include\c++\7.1.0\ostream:205:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long long __n)
+       ^~~~~~~~
+c:\mingw\include\c++\7.1.0\ostream:205:7: note:   no known conversion for argument 1 from 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}' to 'long long unsigned int'
+c:\mingw\include\c++\7.1.0\ostream:220:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(double __f)
+       ^~~~~~~~
+c:\mingw\include\c++\7.1.0\ostream:220:7: note:   no known conversion for argument 1 from 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}' to 'double'
+c:\mingw\include\c++\7.1.0\ostream:224:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(float __f)
+       ^~~~~~~~
+c:\mingw\include\c++\7.1.0\ostream:224:7: note:   no known conversion for argument 1 from 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}' to 'float'
+c:\mingw\include\c++\7.1.0\ostream:232:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long double __f)
+       ^~~~~~~~
+c:\mingw\include\c++\7.1.0\ostream:232:7: note:   no known conversion for argument 1 from 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}' to 'long double'
+c:\mingw\include\c++\7.1.0\ostream:245:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(const void* __p)
+       ^~~~~~~~
+c:\mingw\include\c++\7.1.0\ostream:245:7: note:   no known conversion for argument 1 from 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}' to 'const void*'
+In file included from c:\mingw\include\c++\7.1.0\ostream:666:0,
+                 from c:\mingw\include\c++\7.1.0\iostream:39,
+                 from ..\networkSimulation.cpp:9:
+c:\mingw\include\c++\7.1.0\bits\ostream.tcc:119:5: note: candidate: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+c:\mingw\include\c++\7.1.0\bits\ostream.tcc:119:5: note:   no known conversion for argument 1 from 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}' to 'std::basic_ostream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}'
+In file included from c:\mingw\include\c++\7.1.0\iostream:39:0,
+                 from ..\networkSimulation.cpp:9:
+c:\mingw\include\c++\7.1.0\ostream:656:5: note: candidate: template<class _Ostream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_ostream<_Ostream>, std::__is_insertable<_Ostream&, const _Tp&, void> >::value, typename std::__is_convertible_to_basic_ostream<_Tp>::ostream_type>::type std::operator<<(_Ostream&&, const _Tp&)
+     operator<<(_Ostream&& __os, const _Tp& __x)
+     ^~~~~~~~
+c:\mingw\include\c++\7.1.0\ostream:656:5: note:   template argument deduction/substitution failed:
+c:\mingw\include\c++\7.1.0\ostream: In substitution of 'template<class _Ostream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_ostream<_Ostream>, std::__is_insertable<_Ostream&, const _Tp&, void> >::value, typename std::__is_convertible_to_basic_ostream<_Tp>::ostream_type>::type std::operator<<(_Ostream&&, const _Tp&) [with _Ostream = std::basic_ostream<char>&; _Tp = __gnu_cxx::__normal_iterator<int*, std::vector<int> >]':
+..\networkSimulation.cpp:28:16:   required from here
+c:\mingw\include\c++\7.1.0\ostream:656:5: error: no type named 'type' in 'struct std::enable_if<false, std::basic_ostream<char>&>'
+c:\mingw\include\c++\7.1.0\ostream:574:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+     ^~~~~~~~
+c:\mingw\include\c++\7.1.0\ostream:574:5: note:   template argument deduction/substitution failed:
+..\networkSimulation.cpp:28:16: note:   cannot convert 'i' (type 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}') to type 'const unsigned char*'
+   std::cout << i << std::endl;
+                ^
+In file included from c:\mingw\include\c++\7.1.0\iostream:39:0,
+                 from ..\networkSimulation.cpp:9:
+c:\mingw\include\c++\7.1.0\ostream:569:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+     ^~~~~~~~
+c:\mingw\include\c++\7.1.0\ostream:569:5: note:   template argument deduction/substitution failed:
+..\networkSimulation.cpp:28:16: note:   cannot convert 'i' (type 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}') to type 'const signed char*'
+   std::cout << i << std::endl;
+                ^
+In file included from c:\mingw\include\c++\7.1.0\iostream:39:0,
+                 from ..\networkSimulation.cpp:9:
+c:\mingw\include\c++\7.1.0\ostream:556:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+     ^~~~~~~~
+c:\mingw\include\c++\7.1.0\ostream:556:5: note:   template argument deduction/substitution failed:
+..\networkSimulation.cpp:28:16: note:   cannot convert 'i' (type 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}') to type 'const char*'
+   std::cout << i << std::endl;
+                ^
+In file included from c:\mingw\include\c++\7.1.0\ostream:666:0,
+                 from c:\mingw\include\c++\7.1.0\iostream:39,
+                 from ..\networkSimulation.cpp:9:
+c:\mingw\include\c++\7.1.0\bits\ostream.tcc:321:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+     ^~~~~~~~
+c:\mingw\include\c++\7.1.0\bits\ostream.tcc:321:5: note:   template argument deduction/substitution failed:
+..\networkSimulation.cpp:28:16: note:   cannot convert 'i' (type 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}') to type 'const char*'
+   std::cout << i << std::endl;
+                ^
+In file included from c:\mingw\include\c++\7.1.0\iostream:39:0,
+                 from ..\networkSimulation.cpp:9:
+c:\mingw\include\c++\7.1.0\ostream:539:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+     ^~~~~~~~
+c:\mingw\include\c++\7.1.0\ostream:539:5: note:   template argument deduction/substitution failed:
+..\networkSimulation.cpp:28:16: note:   mismatched types 'const _CharT*' and '__gnu_cxx::__normal_iterator<int*, std::vector<int> >'
+   std::cout << i << std::endl;
+                ^
+In file included from c:\mingw\include\c++\7.1.0\iostream:39:0,
+                 from ..\networkSimulation.cpp:9:
+c:\mingw\include\c++\7.1.0\ostream:519:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+     ^~~~~~~~
+c:\mingw\include\c++\7.1.0\ostream:519:5: note:   template argument deduction/substitution failed:
+..\networkSimulation.cpp:28:16: note:   cannot convert 'i' (type 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}') to type 'unsigned char'
+   std::cout << i << std::endl;
+                ^
+In file included from c:\mingw\include\c++\7.1.0\iostream:39:0,
+                 from ..\networkSimulation.cpp:9:
+c:\mingw\include\c++\7.1.0\ostream:514:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+     ^~~~~~~~
+c:\mingw\include\c++\7.1.0\ostream:514:5: note:   template argument deduction/substitution failed:
+..\networkSimulation.cpp:28:16: note:   cannot convert 'i' (type 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}') to type 'signed char'
+   std::cout << i << std::endl;
+                ^
+In file included from c:\mingw\include\c++\7.1.0\iostream:39:0,
+                 from ..\networkSimulation.cpp:9:
+c:\mingw\include\c++\7.1.0\ostream:508:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+     ^~~~~~~~
+c:\mingw\include\c++\7.1.0\ostream:508:5: note:   template argument deduction/substitution failed:
+..\networkSimulation.cpp:28:16: note:   cannot convert 'i' (type 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}') to type 'char'
+   std::cout << i << std::endl;
+                ^
+In file included from c:\mingw\include\c++\7.1.0\iostream:39:0,
+                 from ..\networkSimulation.cpp:9:
+c:\mingw\include\c++\7.1.0\ostream:502:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+     ^~~~~~~~
+c:\mingw\include\c++\7.1.0\ostream:502:5: note:   template argument deduction/substitution failed:
+..\networkSimulation.cpp:28:16: note:   cannot convert 'i' (type 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}') to type 'char'
+   std::cout << i << std::endl;
+                ^
+In file included from c:\mingw\include\c++\7.1.0\iostream:39:0,
+                 from ..\networkSimulation.cpp:9:
+c:\mingw\include\c++\7.1.0\ostream:497:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+     ^~~~~~~~
+c:\mingw\include\c++\7.1.0\ostream:497:5: note:   template argument deduction/substitution failed:
+..\networkSimulation.cpp:28:16: note:   deduced conflicting types for parameter '_CharT' ('char' and '__gnu_cxx::__normal_iterator<int*, std::vector<int> >')
+   std::cout << i << std::endl;
+                ^
+In file included from c:\mingw\include\c++\7.1.0\bits\ios_base.h:46:0,
+                 from c:\mingw\include\c++\7.1.0\ios:42,
+                 from c:\mingw\include\c++\7.1.0\ostream:38,
+                 from c:\mingw\include\c++\7.1.0\iostream:39,
+                 from ..\networkSimulation.cpp:9:
+c:\mingw\include\c++\7.1.0\system_error:217:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::error_code&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)
+     ^~~~~~~~
+c:\mingw\include\c++\7.1.0\system_error:217:5: note:   template argument deduction/substitution failed:
+..\networkSimulation.cpp:28:16: note:   cannot convert 'i' (type 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}') to type 'const std::error_code&'
+   std::cout << i << std::endl;
+                ^
+In file included from c:\mingw\include\c++\7.1.0\string:52:0,
+                 from c:\mingw\include\c++\7.1.0\bits\locale_classes.h:40,
+                 from c:\mingw\include\c++\7.1.0\bits\ios_base.h:41,
+                 from c:\mingw\include\c++\7.1.0\ios:42,
+                 from c:\mingw\include\c++\7.1.0\ostream:38,
+                 from c:\mingw\include\c++\7.1.0\iostream:39,
+                 from ..\networkSimulation.cpp:9:
+c:\mingw\include\c++\7.1.0\bits\basic_string.h:6082:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os,
+     ^~~~~~~~
+c:\mingw\include\c++\7.1.0\bits\basic_string.h:6082:5: note:   template argument deduction/substitution failed:
+..\networkSimulation.cpp:28:16: note:   'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}' is not derived from 'const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>'
+   std::cout << i << std::endl;
+                ^
+15:51:12 **** Incremental Build of configuration Debug for project 2.1.8 Network packet processing simulation ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o networkSimulation.o "..\\networkSimulation.cpp" 
+..\networkSimulation.cpp: In function 'int main()':
+..\networkSimulation.cpp:28:13: error: no match for 'operator<<' (operand types are 'std::ostream {aka std::basic_ostream<char>}' and 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}')
+   std::cout << i << endl;
+   ~~~~~~~~~~^~~~
+In file included from c:\mingw\include\c++\7.1.0\iostream:39:0,
+                 from ..\networkSimulation.cpp:9:
+c:\mingw\include\c++\7.1.0\ostream:108:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+       ^~~~~~~~
+c:\mingw\include\c++\7.1.0\ostream:108:7: note:   no known conversion for argument 1 from 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}' to 'std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&) {aka std::basic_ostream<char>& (*)(std::basic_ostream<char>&)}'
+c:\mingw\include\c++\7.1.0\ostream:117:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]
+       operator<<(__ios_type& (*__pf)(__ios_type&))
+       ^~~~~~~~
+c:\mingw\include\c++\7.1.0\ostream:117:7: note:   no known conversion for argument 1 from 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}' to 'std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}'
+c:\mingw\include\c++\7.1.0\ostream:127:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(ios_base& (*__pf) (ios_base&))
+       ^~~~~~~~
+c:\mingw\include\c++\7.1.0\ostream:127:7: note:   no known conversion for argument 1 from 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}' to 'std::ios_base& (*)(std::ios_base&)'
+c:\mingw\include\c++\7.1.0\ostream:166:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long __n)
+       ^~~~~~~~
+c:\mingw\include\c++\7.1.0\ostream:166:7: note:   no known conversion for argument 1 from 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}' to 'long int'
+c:\mingw\include\c++\7.1.0\ostream:170:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long __n)
+       ^~~~~~~~
+c:\mingw\include\c++\7.1.0\ostream:170:7: note:   no known conversion for argument 1 from 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}' to 'long unsigned int'
+c:\mingw\include\c++\7.1.0\ostream:174:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(bool __n)
+       ^~~~~~~~
+c:\mingw\include\c++\7.1.0\ostream:174:7: note:   no known conversion for argument 1 from 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}' to 'bool'
+In file included from c:\mingw\include\c++\7.1.0\ostream:666:0,
+                 from c:\mingw\include\c++\7.1.0\iostream:39,
+                 from ..\networkSimulation.cpp:9:
+c:\mingw\include\c++\7.1.0\bits\ostream.tcc:91:5: note: candidate: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+c:\mingw\include\c++\7.1.0\bits\ostream.tcc:91:5: note:   no known conversion for argument 1 from 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}' to 'short int'
+In file included from c:\mingw\include\c++\7.1.0\iostream:39:0,
+                 from ..\networkSimulation.cpp:9:
+c:\mingw\include\c++\7.1.0\ostream:181:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned short __n)
+       ^~~~~~~~
+c:\mingw\include\c++\7.1.0\ostream:181:7: note:   no known conversion for argument 1 from 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}' to 'short unsigned int'
+In file included from c:\mingw\include\c++\7.1.0\ostream:666:0,
+                 from c:\mingw\include\c++\7.1.0\iostream:39,
+                 from ..\networkSimulation.cpp:9:
+c:\mingw\include\c++\7.1.0\bits\ostream.tcc:105:5: note: candidate: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+c:\mingw\include\c++\7.1.0\bits\ostream.tcc:105:5: note:   no known conversion for argument 1 from 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}' to 'int'
+In file included from c:\mingw\include\c++\7.1.0\iostream:39:0,
+                 from ..\networkSimulation.cpp:9:
+c:\mingw\include\c++\7.1.0\ostream:192:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned int __n)
+       ^~~~~~~~
+c:\mingw\include\c++\7.1.0\ostream:192:7: note:   no known conversion for argument 1 from 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}' to 'unsigned int'
+c:\mingw\include\c++\7.1.0\ostream:201:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long long __n)
+       ^~~~~~~~
+c:\mingw\include\c++\7.1.0\ostream:201:7: note:   no known conversion for argument 1 from 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}' to 'long long int'
+c:\mingw\include\c++\7.1.0\ostream:205:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long long __n)
+       ^~~~~~~~
+c:\mingw\include\c++\7.1.0\ostream:205:7: note:   no known conversion for argument 1 from 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}' to 'long long unsigned int'
+c:\mingw\include\c++\7.1.0\ostream:220:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(double __f)
+       ^~~~~~~~
+c:\mingw\include\c++\7.1.0\ostream:220:7: note:   no known conversion for argument 1 from 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}' to 'double'
+c:\mingw\include\c++\7.1.0\ostream:224:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(float __f)
+       ^~~~~~~~
+c:\mingw\include\c++\7.1.0\ostream:224:7: note:   no known conversion for argument 1 from 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}' to 'float'
+c:\mingw\include\c++\7.1.0\ostream:232:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long double __f)
+       ^~~~~~~~
+c:\mingw\include\c++\7.1.0\ostream:232:7: note:   no known conversion for argument 1 from 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}' to 'long double'
+c:\mingw\include\c++\7.1.0\ostream:245:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(const void* __p)
+       ^~~~~~~~
+c:\mingw\include\c++\7.1.0\ostream:245:7: note:   no known conversion for argument 1 from 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}' to 'const void*'
+In file included from c:\mingw\include\c++\7.1.0\ostream:666:0,
+                 from c:\mingw\include\c++\7.1.0\iostream:39,
+                 from ..\networkSimulation.cpp:9:
+c:\mingw\include\c++\7.1.0\bits\ostream.tcc:119:5: note: candidate: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+c:\mingw\include\c++\7.1.0\bits\ostream.tcc:119:5: note:   no known conversion for argument 1 from 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}' to 'std::basic_ostream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}'
+In file included from c:\mingw\include\c++\7.1.0\iostream:39:0,
+                 from ..\networkSimulation.cpp:9:
+c:\mingw\include\c++\7.1.0\ostream:656:5: note: candidate: template<class _Ostream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_ostream<_Ostream>, std::__is_insertable<_Ostream&, const _Tp&, void> >::value, typename std::__is_convertible_to_basic_ostream<_Tp>::ostream_type>::type std::operator<<(_Ostream&&, const _Tp&)
+     operator<<(_Ostream&& __os, const _Tp& __x)
+     ^~~~~~~~
+c:\mingw\include\c++\7.1.0\ostream:656:5: note:   template argument deduction/substitution failed:
+c:\mingw\include\c++\7.1.0\ostream: In substitution of 'template<class _Ostream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_ostream<_Ostream>, std::__is_insertable<_Ostream&, const _Tp&, void> >::value, typename std::__is_convertible_to_basic_ostream<_Tp>::ostream_type>::type std::operator<<(_Ostream&&, const _Tp&) [with _Ostream = std::basic_ostream<char>&; _Tp = __gnu_cxx::__normal_iterator<int*, std::vector<int> >]':
+..\networkSimulation.cpp:28:16:   required from here
+c:\mingw\include\c++\7.1.0\ostream:656:5: error: no type named 'type' in 'struct std::enable_if<false, std::basic_ostream<char>&>'
+c:\mingw\include\c++\7.1.0\ostream:574:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+     ^~~~~~~~
+c:\mingw\include\c++\7.1.0\ostream:574:5: note:   template argument deduction/substitution failed:
+..\networkSimulation.cpp:28:16: note:   cannot convert 'i' (type 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}') to type 'const unsigned char*'
+   std::cout << i << endl;
+                ^
+In file included from c:\mingw\include\c++\7.1.0\iostream:39:0,
+                 from ..\networkSimulation.cpp:9:
+c:\mingw\include\c++\7.1.0\ostream:569:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+     ^~~~~~~~
+c:\mingw\include\c++\7.1.0\ostream:569:5: note:   template argument deduction/substitution failed:
+..\networkSimulation.cpp:28:16: note:   cannot convert 'i' (type 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}') to type 'const signed char*'
+   std::cout << i << endl;
+                ^
+In file included from c:\mingw\include\c++\7.1.0\iostream:39:0,
+                 from ..\networkSimulation.cpp:9:
+c:\mingw\include\c++\7.1.0\ostream:556:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+     ^~~~~~~~
+c:\mingw\include\c++\7.1.0\ostream:556:5: note:   template argument deduction/substitution failed:
+..\networkSimulation.cpp:28:16: note:   cannot convert 'i' (type 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}') to type 'const char*'
+   std::cout << i << endl;
+                ^
+In file included from c:\mingw\include\c++\7.1.0\ostream:666:0,
+                 from c:\mingw\include\c++\7.1.0\iostream:39,
+                 from ..\networkSimulation.cpp:9:
+c:\mingw\include\c++\7.1.0\bits\ostream.tcc:321:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+     ^~~~~~~~
+c:\mingw\include\c++\7.1.0\bits\ostream.tcc:321:5: note:   template argument deduction/substitution failed:
+..\networkSimulation.cpp:28:16: note:   cannot convert 'i' (type 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}') to type 'const char*'
+   std::cout << i << endl;
+                ^
+In file included from c:\mingw\include\c++\7.1.0\iostream:39:0,
+                 from ..\networkSimulation.cpp:9:
+c:\mingw\include\c++\7.1.0\ostream:539:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+     ^~~~~~~~
+c:\mingw\include\c++\7.1.0\ostream:539:5: note:   template argument deduction/substitution failed:
+..\networkSimulation.cpp:28:16: note:   mismatched types 'const _CharT*' and '__gnu_cxx::__normal_iterator<int*, std::vector<int> >'
+   std::cout << i << endl;
+                ^
+In file included from c:\mingw\include\c++\7.1.0\iostream:39:0,
+                 from ..\networkSimulation.cpp:9:
+c:\mingw\include\c++\7.1.0\ostream:519:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+     ^~~~~~~~
+c:\mingw\include\c++\7.1.0\ostream:519:5: note:   template argument deduction/substitution failed:
+..\networkSimulation.cpp:28:16: note:   cannot convert 'i' (type 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}') to type 'unsigned char'
+   std::cout << i << endl;
+                ^
+In file included from c:\mingw\include\c++\7.1.0\iostream:39:0,
+                 from ..\networkSimulation.cpp:9:
+c:\mingw\include\c++\7.1.0\ostream:514:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+     ^~~~~~~~
+c:\mingw\include\c++\7.1.0\ostream:514:5: note:   template argument deduction/substitution failed:
+..\networkSimulation.cpp:28:16: note:   cannot convert 'i' (type 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}') to type 'signed char'
+   std::cout << i << endl;
+                ^
+In file included from c:\mingw\include\c++\7.1.0\iostream:39:0,
+                 from ..\networkSimulation.cpp:9:
+c:\mingw\include\c++\7.1.0\ostream:508:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+     ^~~~~~~~
+c:\mingw\include\c++\7.1.0\ostream:508:5: note:   template argument deduction/substitution failed:
+..\networkSimulation.cpp:28:16: note:   cannot convert 'i' (type 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}') to type 'char'
+   std::cout << i << endl;
+                ^
+In file included from c:\mingw\include\c++\7.1.0\iostream:39:0,
+                 from ..\networkSimulation.cpp:9:
+c:\mingw\include\c++\7.1.0\ostream:502:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+     ^~~~~~~~
+c:\mingw\include\c++\7.1.0\ostream:502:5: note:   template argument deduction/substitution failed:
+..\networkSimulation.cpp:28:16: note:   cannot convert 'i' (type 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}') to type 'char'
+   std::cout << i << endl;
+                ^
+In file included from c:\mingw\include\c++\7.1.0\iostream:39:0,
+                 from ..\networkSimulation.cpp:9:
+c:\mingw\include\c++\7.1.0\ostream:497:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+     ^~~~~~~~
+c:\mingw\include\c++\7.1.0\ostream:497:5: note:   template argument deduction/substitution failed:
+..\networkSimulation.cpp:28:16: note:   deduced conflicting types for parameter '_CharT' ('char' and '__gnu_cxx::__normal_iterator<int*, std::vector<int> >')
+   std::cout << i << endl;
+                ^
+In file included from c:\mingw\include\c++\7.1.0\bits\ios_base.h:46:0,
+                 from c:\mingw\include\c++\7.1.0\ios:42,
+                 from c:\mingw\include\c++\7.1.0\ostream:38,
+                 from c:\mingw\include\c++\7.1.0\iostream:39,
+                 from ..\networkSimulation.cpp:9:
+c:\mingw\include\c++\7.1.0\system_error:217:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::error_code&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)
+     ^~~~~~~~
+c:\mingw\include\c++\7.1.0\system_error:217:5: note:   template argument deduction/substitution failed:
+..\networkSimulation.cpp:28:16: note:   cannot convert 'i' (type 'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}') to type 'const std::error_code&'
+   std::cout << i << endl;
+                ^
+In file included from c:\mingw\include\c++\7.1.0\string:52:0,
+                 from c:\mingw\include\c++\7.1.0\bits\locale_classes.h:40,
+                 from c:\mingw\include\c++\7.1.0\bits\ios_base.h:41,
+                 from c:\mingw\include\c++\7.1.0\ios:42,
+                 from c:\mingw\include\c++\7.1.0\ostream:38,
+                 from c:\mingw\include\c++\7.1.0\iostream:39,
+                 from ..\networkSimulation.cpp:9:
+c:\mingw\include\c++\7.1.0\bits\basic_string.h:6082:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os,
+     ^~~~~~~~
+c:\mingw\include\c++\7.1.0\bits\basic_string.h:6082:5: note:   template argument deduction/substitution failed:
+..\networkSimulation.cpp:28:16: note:   'std::vector<int>::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int> >}' is not derived from 'const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>'
+   std::cout << i << endl;
+                ^
+..\networkSimulation.cpp:28:21: error: 'endl' was not declared in this scope
+   std::cout << i << endl;
+                     ^~~~
+..\networkSimulation.cpp:28:21: note: suggested alternative:
+In file included from c:\mingw\include\c++\7.1.0\iostream:39:0,
+                 from ..\networkSimulation.cpp:9:
+c:\mingw\include\c++\7.1.0\ostream:590:5: note:   'std::endl'
+     endl(basic_ostream<_CharT, _Traits>& __os)
+     ^~~~
+15:51:25 **** Incremental Build of configuration Debug for project 2.1.8 Network packet processing simulation ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o networkSimulation.o "..\\networkSimulation.cpp" 
+..\networkSimulation.cpp: In function 'int main()':
+..\networkSimulation.cpp:28:22: error: 'endl' was not declared in this scope
+   std::cout << *i << endl;
+                      ^~~~
+..\networkSimulation.cpp:28:22: note: suggested alternative:
+In file included from c:\mingw\include\c++\7.1.0\iostream:39:0,
+                 from ..\networkSimulation.cpp:9:
+c:\mingw\include\c++\7.1.0\ostream:590:5: note:   'std::endl'
+     endl(basic_ostream<_CharT, _Traits>& __os)
+     ^~~~
+15:52:27 **** Incremental Build of configuration Debug for project 2.1.8 Network packet processing simulation ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o networkSimulation.o "..\\networkSimulation.cpp" 
+g++ -o "2.1.8 Network packet processing simulation.exe" networkSimulation.o 
+23:41:57 **** Incremental Build of configuration Debug for project 2.1.8 Network packet processing simulation ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o networkSimulation.o "..\\networkSimulation.cpp" 
+..\networkSimulation.cpp: In member function 'void Request::readRequest()':
+..\networkSimulation.cpp:47:21: error: 'ulint Packet::A' is private within this context
+    std::cin >> temp.A;
+                     ^
+..\networkSimulation.cpp:18:8: note: declared private here
+  ulint A; // The arrival time
+        ^
+..\networkSimulation.cpp:48:21: error: 'ulint Packet::P' is private within this context
+    std::cin >> temp.P;
+                     ^
+..\networkSimulation.cpp:19:8: note: declared private here
+  ulint P; // The process time
+        ^
+23:43:13 **** Incremental Build of configuration Debug for project 2.1.8 Network packet processing simulation ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o networkSimulation.o "..\\networkSimulation.cpp" 
+g++ -o "2.1.8 Network packet processing simulation.exe" networkSimulation.o 
+Info: Nothing to build for 2.1.8 Network packet processing simulation
+Info: Nothing to build for 2.1.8 Network packet processing simulation
